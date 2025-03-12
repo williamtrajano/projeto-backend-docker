@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  db:
+    image: mcr.microsoft.com/mssql/server:latest
+    container_name: banco-sqlServer
+    restart: always
+    environment:
+      SA_PASSWORD: "MinhaSenhaForte@123"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserver_data:/var/opt/mssql
+
+volumes:
+  sqlserver_data:
