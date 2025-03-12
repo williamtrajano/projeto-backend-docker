@@ -5,11 +5,9 @@ API RESTful desenvolvida em .NET 8 seguindo os princípios de DDD, Clean Archite
 .NET 8
 Entity Framework Core
 SQL Server (Docker)
-FluentValidation
 MediatR
 JWT (Json Web Token)
 Docker & Docker Compose
-Testes Unitários
 
 -------------------------------------------------------------------------------
 
@@ -29,6 +27,12 @@ dotnet ef database update
 4. Rodar a API
 dotnet run --project ambev.Api
 
+5. Criar a imagem no Docker
+docker build --no-cache -t ambev-api .
+
+6. Rodar o Container
+docker run -d -p 5000:5000 --name ambev-container-netcore ambev-api
+
 🛠 Endpoints Disponíveis
 Método	Endpoint	Descrição
 POST	/api/auth/login	Autenticação e geração do JWT
@@ -37,7 +41,7 @@ POST	/api/funcionarios	Criar um funcionário
 PUT	/api/funcionarios/{id}	Atualizar funcionário
 DELETE	/api/funcionarios/{id}	Deletar funcionário
 Para testar os endpoints, você pode usar o Swagger, disponível em:
-🔗 http://localhost:8080/swagger
+🔗 http://localhost:5000/swagger
 
 
 --------------------------------------------------------------------------------
