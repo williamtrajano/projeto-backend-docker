@@ -13,7 +13,7 @@ Docker & Docker Compose
 
 📦 Como Rodar o Projeto
 
-1️. Clonar o repositório
+1. Clonar o repositório
 
 git clone https://github.com/seu-usuario/seu-repositorio.git
 cd seu-repositorio
