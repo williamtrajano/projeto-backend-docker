@@ -1,0 +1,33 @@
+# Visual Studio
+.vscode/
+.vscode/*
+
+# Rider
+.idea/
+.idea/*
+
+# DotNet
+*.swp
+*.swo
+*.user
+*.sln.docstates
+*.suo
+*.userosscache
+*.userprefs
+*.csproj.user
+*.csproj.vspscc
+
+# Ignorar binários das pastas específicas
+Ambev.Api/Ambev.Api/bin/*
+Ambev.Api/Ambev.Application/bin/*
+Ambev.Api/Ambev.Domain/bin/*
+Ambev.Api/Ambev.Infrastructure/bin/*
+
+# Ignorar arquivos de build e obj
+Ambev.Api/Ambev.Api/obj/*
+Ambev.Api/Ambev.Application/obj/*
+Ambev.Api/Ambev.Domain/obj/*
+Ambev.Api/Ambev.Infrastructure/obj/*
+_leiame.txt
+Ambev.Api/.vs/*
+Ambev.Api/.vs/Ambev.Api/DesignTimeBuild/.dtbcache.v2
