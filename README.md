@@ -52,4 +52,3 @@ dotnet test
 📜 Licença
 Este projeto é de código aberto e está sob a licença MIT.
 
-Agora seu README.md está pronto para ser usado no GitHub! 🚀
